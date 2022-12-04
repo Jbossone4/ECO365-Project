@@ -4,7 +4,7 @@ Final project for eco365
 This Project was meant to be used as an Analysis of trends using the Twitter Api. By default once the program runs it will set that project folder as the working directory, thus making it easier to compile the dashboard.
 
 
-*************************************************************************************************************************************************************IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN THE CODE TO INSTALL ALL NECESSARY PACKAGES BEFORE PROCEEDING OTHERWISE THE CODE WILL RETURN ERRORS. ONCE THE USER INSTALLS ALL THE NECESSARY PACKAGES PROVIDED TO THEM, THE USER SHOULD THEN EITHER DELETE OR COMMENT THOSE LINES OF CODE OUT TO ENSURE EASY RE-USE OF THE PROGRAM.
+********************************************************************************************************************************************************IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN THE CODE TO INSTALL ALL NECESSARY PACKAGES BEFORE PROCEEDING OTHERWISE THE CODE WILL RETURN ERRORS. ONCE THE USER INSTALLS ALL THE NECESSARY PACKAGES PROVIDED TO THEM, THE USER SHOULD THEN EITHER DELETE OR COMMENT THOSE LINES OF CODE OUT TO ENSURE EASY RE-USE OF THE PROGRAM.
 *************************************************************************************************************************************************************
 
 
