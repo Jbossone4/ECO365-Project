@@ -3,6 +3,14 @@ Final project for eco365
 
 This Project was meant to be used as an Analysis of trends using the Twitter Api. By default once the program runs it will set that project folder as the working directory, thus making it easier to compile the dashboard.
 
+
+*************************************************************************************************************************************************************IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN THE CODE TO INSTALL ALL NECESSARY PACKAGES BEFORE PROCEEDING OTHERWISE THE CODE WILL RETURN ERRORS. ONCE THE USER INSTALLS ALL THE NECESSARY PACKAGES PROVIDED TO THEM, THE USER SHOULD THEN EITHER DELETE OR COMMENT THOSE LINES OF CODE OUT TO ENSURE EASY RE-USE OF THE PROGRAM.
+*************************************************************************************************************************************************************
+
+
+
+
+
 There are two ways to use this code. 
 
 First and the best way is to open the dashboards.Rmd file within the zip using Rstudio. Once opened, all you need to do is click Knit, and it should automatically run the whole code and turn it into an HTML file which can now be analyzed and interacted with. Take note that the time the run time of the code varies based on the users computer specs and how many tweets are being extracted. 
