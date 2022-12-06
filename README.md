@@ -1,6 +1,8 @@
 # ECO365-Project
 Final project for eco365
 
+To download the source code click on <>Code then download zip. From there extract the files into your documents folder. From there open the Final Project.R file from your R studio to continue, follow the instructions below. If you do not want to open the source code, open the Dashboards.RMD file and follow the instructions below
+
 This Project was meant to be used as an Analysis of trends using the Twitter Api. By default once the program runs it will set that project folder as the working directory, thus making it easier to compile the dashboard.
 
 
