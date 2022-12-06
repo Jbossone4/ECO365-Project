@@ -13,7 +13,7 @@ IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN TH
 
 
 
-There are two ways to use this code. 
+There are two ways to use this program. 
 
 First and the best way is to open the dashboards.Rmd file within the zip using Rstudio. Once opened, all you need to do is click Knit, and it should automatically run the whole code and turn it into an HTML file which can now be analyzed and interacted with. Take note that the time the run time of the code varies based on the users computer specs and how many tweets are being extracted. 
 
