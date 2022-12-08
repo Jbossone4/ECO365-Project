@@ -12,9 +12,9 @@ This Project was meant to be used as an Analysis of trends using the Twitter Api
 *************************************************************************************************************************************************************
 
 
-There are two ways to use this program. 
+It is highly recommended to first run this program straight from the source file "Final project.R". It is advised that the user run the source file line by line to better help them understand how to program works. Concurrently, the user will see how the data is transformed in the global environment, and see the visualizations created one at a time as they proceed through the code. 
 
-First and the best way is to open the dashboards.Rmd file within the zip using Rstudio. Once opened, all you need to do is click Knit, and it should automatically run the whole code and turn it into an HTML file which can now be analyzed and interacted with. Take note that the time the run time of the code varies based on the users computer specs and how many tweets are being extracted. 
+Following the source codes run to completion, the user should open the "dashboards.Rmd" file. Once opened, all you need to do is click Knit, and it should automatically run the project and turn it into an HTML file which can now be analyzed and interacted with. Take note that the time the run time of the code varies based on the users computer specs and how many tweets are being extracted. 
 
 The user of this program is able to go into the source code "Final Project.R" to change the parameters of your search. The default parameterized search is 15,000 tweets. At its current stage, the program will handle up to 18,000 tweets in a 15 minute period. That being said, the code is built to sustain higher numbers of tweets should the user wish to make the search larger than 18,000 tweets. However, the run time of the program will be significantly slowed should the user choose to extract more than 18,000 tweets. 
 
