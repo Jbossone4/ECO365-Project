@@ -1,16 +1,15 @@
 # ECO365-Project
 Final project for eco365
 
-To download the source code click on <>Code then download zip. From there extract the files into your documents folder. From there open the Final Project.R file from your R studio to continue, follow the instructions below. If you do not want to open the source code, open the Dashboards.RMD file and follow the instructions below
+To download the source code click on <>Code then download zip. 
+
+***DO NOT SKIP THIS STEP: Extract the files all files from zip file. Then open the "ECO365 Final project.Rproj" file from the extracted folder; Opening the Rproj file will open the directory needed to continue the project without issue.***
 
 This Project was meant to be used as an Analysis of trends using the Twitter Api. By default once the program runs it will set that project folder as the working directory, thus making it easier to compile the dashboard.
 
 
-IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN THE CODE TO INSTALL ALL NECESSARY PACKAGES BEFORE PROCEEDING OTHERWISE THE CODE WILL RETURN ERRORS. ONCE THE USER INSTALLS ALL THE NECESSARY PACKAGES PROVIDED TO THEM, THE USER SHOULD THEN EITHER DELETE OR COMMENT THOSE LINES OF CODE OUT TO ENSURE EASY RE-USE OF THE PROGRAM.
+**IT IS IMPORTANT BEFORE THE USER DOES ANYTHING WITH THIS PROJECT THAT THEY RUN THE CODE TO INSTALL ALL NECESSARY PACKAGES BEFORE PROCEEDING OTHERWISE THE PROJECT WILL RETURN ERRORS. ONCE THE USER INSTALLS ALL THE NECESSARY PACKAGES PROVIDED TO THEM ON LINES 4-6 ON "FINAL PROJECT.R" FILE, THE USER SHOULD THEN EITHER DELETE OR COMMENT THOSE LINES OF CODE OUT TO ENSURE EASY RE-USE OF THE PROGRAM.
 *************************************************************************************************************************************************************
-
-
-
 
 
 There are two ways to use this program. 
@@ -26,3 +25,6 @@ The second way to run this program is for the user to do it straight from the so
 If the user chooses to run the code in the source file "Final project.R" all at once, it will compile the whole project. In doing so, the user will have to go into their viewer tab and use the back arrow to cycle through the visualizations which is not in its intended order. Additionally, the user will have to click on the plots tab to view the word cloud visualization as it is a separate image. This is why it is best to run the program line by line, or through knitting the "dashboard.Rmd" file.
 
 This program has many visualization tools that allows the user with natural language processing. The first visualization presented is a time series chart that shows the timeframe from which the tweets were extracted from, and how many tweets were made per hour. The second visualization is a vertical barchart with aggregated sentiment values of negative neutral and positive. With this visualization you can see how the sentiment of the extracted tweets are. Subsequently, the next visualization is a histogram which shows the assigned value distributions on the tweets. Tweets were scored based on an algorigthm that uses lexical data to determine the overall value of each tweet. Next is a Word cloud that shows the top 100 words used in the tweets based on their frequency. Afterwards, a chart is created to see the top ten emojis used within all collective tweets. To see how the scores are better distributed, the next visualization is the top ten frequency of both positive and negative words. Lastly is a frequency chart for the most frequent hashtags that are associated with the original keyword searched. This allows the user to rerun the program with new insight on what to search for additional information on the trend.
+
+If there are any issues with authentication, you are able to click this link below to see the dashboard with previously extracted data:
+https://rpubs.com/Jbossone4/981127
