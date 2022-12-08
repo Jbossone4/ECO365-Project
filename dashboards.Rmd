@@ -1,0 +1,87 @@
+---
+title: "Sentiment Analysis on Top Trending Twitter term"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+---
+<style>                     
+.navbar {
+  background-color:lavender;
+  border-color:black;
+}
+.navbar-brand {
+color:black!important;
+}
+</style>
+
+```{r setup, include=FALSE}
+setwd("~/ECO365 Final project")
+library(flexdashboard)
+library(magrittr)
+library(knitr)
+source("Final Project.R", local = knitr::knit_global())
+```
+
+Column{data-height=600}
+------------------------------------------------------------------------
+
+```{r}
+  #transforms ggplot line graph into interactive line graph
+  ggplotly(lineGraphed, tooltip = "all", dynamicTicks = TRUE)%>%
+    #Since the layout() function only has a title (and not subtitle) argument, we have to use some HTML to format our text to get it just right.
+    layout(title = paste(
+      '<b></b>',paste("Tweets Per Hour", paste("for Keyword:", Lookup)),
+      '<br><sup>',
+      paste0(format(min(tweets.df$created_at), "%d %B %Y"), " to ", format(max(tweets.df$created_at),"%d %B %Y")),
+      '</i><br>',
+      '</sup>'
+    ),
+  margin = list(t = 75)
+  )
+
+
+
+```
+
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### Aggregate Sentiment Tweets
+
+```{r, fig.width=5, fig.height=5}
+ggplotly(sentimentFreq,tooltip = "all", dynamicTicks = TRUE)
+```
+
+### Sentiment Distribution
+
+```{r, fig.width=5, fig.height=5}
+ggplotly(practice, tooltip = "all", dynamicTicks = TRUE)
+```
+
+
+
+### Frequency Word Cloud
+
+```{r, fig.width=5, fig.height=5}
+words<- strippedTweets %>% 
+    with(wordcloud(word, n, scale = c(2.2,.8), random.order = F, max.words = 100, color =brewer.pal(8, "Dark2"), random.color = TRUE))
+```
+
+### Most Frequent Emojis
+
+```{r, fig.width=5, fig.height=5}
+ ggplotly(emo, tooltip = "all")
+```
+
+### Top Ten Positive and Negative words
+
+```{r, fig.width=5, fig.height=5}
+  ggplotly(PosNeg)
+```
+
+### Top Ten Frequent Hashtags
+
+```{r, fig.width=5, fig.height=5}
+  ggplotly(hashtag, tooltip = "all")
+
+```
